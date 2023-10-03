@@ -1,3 +1,18 @@
+<div class="card-group">
+    <div class="card" *ngFor="let p of products">
+        <img  [src]="p.productUrl" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">{{p.productName}}</h5>
+            <p class="card-text">{{p.productDescription}}</p>
+            <p class="card-text"><b>Rs.{{p.productPrice}}/-</b></p>
+            <button class="btn btn-outline-primary" >Add to Cart</button>
+            <br/>
+            <p></p>
+            <button class="btn btn-outline-primary">Buynow</button>
+        </div>
+    </div>
+
+</div>
 
 <div class="card mb-3" style="width: 100%;">
     <div class="row no-gutters" *ngFor="let p of products">
