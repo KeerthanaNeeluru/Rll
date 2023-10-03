@@ -12,7 +12,7 @@ export class UserDisplayComponent {
   products:Product[]=[];
   constructor(private userService: UserService){}
   heretoEdit?:User;
-
+searchText?:any;
 
   
   ngOnInit():void{

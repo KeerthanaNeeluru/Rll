@@ -10,6 +10,7 @@ import { UserService } from 'src/app/services/user.service';
 export class ProductAdminComponent {
   products:Product[]=[];
   heretoEdit?:Product;
+  searchText?:any;
 constructor(private userService: UserService){}
 ngOnInit():void{
   console.log("Inside UserDisplayComponent initialization");

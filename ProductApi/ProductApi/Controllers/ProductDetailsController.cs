@@ -34,7 +34,7 @@ namespace ProductApi.Controllers
             var dbprod = await _context.ProductDetailss.FindAsync(prod.ProductId);
             if (dbprod == null)
             {
-                return BadRequest("Hero not found");
+                return BadRequest("Product not found");
             }
             dbprod.ProductId = prod.ProductId;
             dbprod.ProductUrl = prod.ProductUrl;

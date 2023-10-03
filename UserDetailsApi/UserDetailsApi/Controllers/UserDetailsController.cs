@@ -46,9 +46,7 @@ namespace UserDetailsApi.Controllers
             dbuser.FirstName = user.FirstName;
             dbuser.LastName = user.LastName;
             dbuser.Email = user.Email;
-            dbuser.Contact = user.Contact;
-            dbuser.Address = user.Address;
-
+            
             await _context.SaveChangesAsync();
 
             return (await _context.UserDetailss.ToListAsync());

@@ -5,7 +5,6 @@ export class User{
     firstName="";
     lastName="";
     email="";
-    contact="";
-    address="";
+   
 
 }

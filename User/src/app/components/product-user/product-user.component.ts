@@ -7,6 +7,8 @@ import { UserService } from 'src/app/services/user.service';
   styleUrls: ['./product-user.component.css']
 })
 export class ProductUserComponent {
+
+ searchText:any; 
 products : Product[] = [];
 constructor(private userService: UserService){}
 ngOnInit():void{
