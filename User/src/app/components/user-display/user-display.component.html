@@ -1,0 +1,34 @@
+<button (click)="initNewUser()" class="btn btn-outline-success">Create New User</button>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+
+      <th scope="col">UserName</th>
+      <th scope="col">Password</th>
+      <th scope="col">FirstName</th>
+      <th scope="col">LastName</th>
+      <th scope="col">Email</th>
+      <th scope="col">Contact</th>
+      <th scope="col">Address</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let u of users ">
+
+      <td>{{u.userName}}</td>
+      <td>{{u.password}}</td>
+      <td>{{u.firstName}}</td>
+      <td>{{u.lastName}}</td>
+      <td>{{u.email}}</td>
+      <td>{{u.contact}}</td>
+      <td>{{u.address}}</td>
+      <td><button (click)="editUser(u)" class="btn btn-outline-primary">Edit</button> </td>
+      <td><button class="btn btn-outline-primary">View Orders</button></td>
+    </tr>
+
+  </tbody>
+</table>
+
+
+<app-useredit [user]="heretoEdit" (userChanged)="updateUserList($event)"></app-useredit>
