@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using UserDetailsApi.Models;
 
 namespace UserDetailsApi.Data
 {
@@ -6,5 +7,7 @@ namespace UserDetailsApi.Data
     {
         public DataContext(DbContextOptions<DataContext> options) : base(options) { }
         public DbSet<UserDetails> UserDetailss=>Set<UserDetails>();
+        public DbSet<ProductDetails> ProductDetailss => Set<ProductDetails>();
+
     }
 }

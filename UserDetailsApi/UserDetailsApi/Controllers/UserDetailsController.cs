@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using UserDetailsApi.Data;
+using UserDetailsApi.Models;
 
 namespace UserDetailsApi.Controllers
 {

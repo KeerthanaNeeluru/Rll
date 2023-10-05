@@ -1,0 +1,101 @@
+
+
+<div class="row">
+  <div class="col-75">
+    <!-- <div *ngFor="let item of cartItems">
+        <p>{{ item.product.name }} x{{ item.quantity }} - ${{ item.product.price * item.quantity }}</p>
+      </div> -->
+    <div class="container">
+      <form >
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="FullName">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="Email Address">
+            
+            <div class="row">
+              <div class="col-50">
+                <label for="state">Address</label>
+                <input type="text" id="state" name="state" placeholder="Address" required>
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="ZipCode" required>
+              </div>
+            </div>
+          </div>
+            
+<p>Product Price: ${{ productPrice }}</p>
+
+<div *ngFor="let item of cartItems">
+  <p>{{ item.product.name }}t x{{ item.quantity }} - ${{ item.product.price * item.quantity }}</p>
+</div>
+
+<p>Total: ${{ total }}</p>
+        
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30913.424216943175!2d77.69604496065436!3d14.416898717972044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb1436576c5408d%3A0x4f8776a22373a987!2sDharmavaram%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1696388697117!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        <button class="btn btn-outline-success">Continue to check out</button>
+       
+      </form>
+    </div>
+  </div>
+ 
+</div>
+
+
+
+<!-- <div class="card-container">
+    <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Password</label>
+            <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputAddress">Address</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        <div class="form-group">
+          <label for="inputAddress2">Address 2</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">City</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputState">State</label>
+            <select id="inputState" class="form-control">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputZip">Zip</label>
+            <input type="text" class="form-control" id="inputZip">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Check me out
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign in</button>
+      </form>
+</div> -->

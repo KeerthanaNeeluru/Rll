@@ -1,0 +1,25 @@
+
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1" >Search </span>
+  </div>
+  <input type="text" class="form-control" width="50%" [(ngModel)]="searchText" placeholder="Search"  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <button (click)="initNewProduct()" class="btn btn-outline-success">Add New Product</button>
+</div>
+
+  <app-prod-edit [products]="heretoEdit" (productsChanged)="updateProductList($event)"></app-prod-edit>
+
+<table class="table table-hover">
+
+  <tbody>
+    <tr *ngFor="let p of products |filter:searchText">
+   <td><img [src]="p.productUrl" height="150" width="200"></td>
+   <td class="text-center">{{p.productName}}</td>
+   <td>{{p.productDescription}}</td>
+   <td>{{p.productPrice}}</td>
+   <td>{{p.productInStock}}</td>
+   <td><button class="btn btn-outline-primary" (click)="editProduct(p)">Edit</button></td>
+    </tr>
+  
+  </tbody>
+</table>

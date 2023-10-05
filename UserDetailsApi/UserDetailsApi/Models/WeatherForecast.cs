@@ -1,4 +1,4 @@
-namespace UserDetailsApi
+namespace UserDetailsApi.Models
 {
     public class WeatherForecast
     {
