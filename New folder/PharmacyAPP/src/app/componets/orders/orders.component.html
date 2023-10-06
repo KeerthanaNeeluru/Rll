@@ -1,0 +1,30 @@
+<!-- <div class="row">
+  <div class="col-lg-3 col-md-4 col-sm-6 mb-4" *ngFor="let b of bill">
+    <div class="card h-100 border-0 shadow" style="background-color: #f8f9fa;">
+      <div class="card-body d-flex flex-column">
+        
+        <div class="mt-auto">
+          <h5 class="card-title text-center">{{b.address}}</h5>
+          <p class="card-text text-center">{{b.pincode}}</p>
+          <p class="card-text text-center"><span>{{b.phoneNumber}}</span></p>
+          <td><button class="btn btn-outline-primary" (click)="editBill(b)">Edit</button></td>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+ <table class="table table-hover">
+
+  <tbody>
+    <tr *ngFor="let b of bill ">
+   
+   <td class="text-center">{{b.address}}</td>
+   <td>{{b.pincode}}</td>
+   <td>{{b.phoneNumber}}</td>
+   
+   <td><button class="btn btn-outline-primary" (click)="editBill(b)">Edit</button></td>
+    </tr>
+  
+  </tbody>
+</table>   
